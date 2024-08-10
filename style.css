@@ -11,6 +11,7 @@
     --imprint-link-color: #FFFFFF;
     --active-link-color: #0000FF;
     --footer-height: 36px;
+    --bottom-space: 16px;
 }
 
 * {
@@ -78,6 +79,7 @@ header {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: calc(var(--footer-height) + var(--bottom-space));
 }
 
 .eye-catch-image {
@@ -90,8 +92,6 @@ header {
     flex-direction: column;
     margin-top: 16px;
     gap: 16px;
-    padding-bottom: var(--footer-height);
-    margin-bottom: var(--footer-height);
 }
 
 @media (max-width: 768px) {
