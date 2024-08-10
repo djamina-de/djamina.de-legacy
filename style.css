@@ -10,6 +10,7 @@
     --inactive-link-color: #000000;
     --imprint-link-color: #FFFFFF;
     --active-link-color: #0000FF;
+    --pre-separator-height: 32px;
     --footer-height: 36px;
     --bottom-space: 16px;
 }
@@ -67,7 +68,7 @@ header {
 
 .pre-separator {
     display: block;
-    height: 32px;
+    height: var(--pre-separator-height);
     background-color: var(--separator-color);
 }
 
@@ -110,6 +111,12 @@ header {
     flex-direction: column;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+@media (max-width: 768px) {
+    .imprint-text {
+        margin-top: var(--pre-separator-height);
+    }
 }
 
 .imprint-text > p > a {
