@@ -66,10 +66,15 @@ header {
 }
 
 .pre-separator {
-    /* display: none; */
     display: block;
     height: 32px;
     background-color: var(--separator-color);
+}
+
+@media (max-width: 768px) {
+    .pre-separator {
+        display: none;
+    }
 }
 
 .content-wrap {
