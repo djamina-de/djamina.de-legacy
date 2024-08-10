@@ -20,7 +20,6 @@
 }
 
 body {
-    min-height: 100vh;
     background-color: var(--side-border-background-color);
     color: var(--main-text-color);
 }
